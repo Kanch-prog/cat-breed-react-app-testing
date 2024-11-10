@@ -28,11 +28,6 @@ This project is a React-based application that allows users to browse various ca
 
 This project uses **React Testing Library** to verify UI interactions and ensure a consistent user experience.
 
-### 📋 Running Tests
-
-Run the test suite with:
-```bash
-npm test
 
 ## 🏆 Testing Highlights
 
@@ -47,34 +42,24 @@ npm test
    test("renders the landing page", () => {
        render(<App />);
    });
-Mock API Responses:
+## Mock API Responses:
 A custom mockFetch function simulates API responses for breed lists and images. This allows the app to run and tests to pass even without live API data. The mocked data includes:
 
-📋 A list of cat breeds.
-🖼️ Image URLs for each breed, ensuring the UI can display the correct images.
+## 📋 A list of cat breeds.
+## 🖼️ Image URLs for each breed, ensuring the UI can display the correct images.
 Error Handling and Edge Cases:
 The mock function also accounts for unhandled requests to test how the app responds to unexpected scenarios.
 
-📊 Sample Mock API Response
-The mockFetch function in the test file handles multiple endpoints, ensuring flexibility and control over the data returned during tests. Here’s how we handle different requests:
+## 📊 Sample Mock API Response
+The mockFetch function in the test file handles multiple endpoints, ensuring flexibility and control over the data returned during tests. 
 
-javascript
-Copy code
-const breedsListResponse = {
-    message: [
-        { id: "abys", name: "Abyssinian" },
-        { id: "beng", name: "Bengal" },
-        { id: "siam", name: "Siamese" },
-        { id: "pers", name: "Persian" },
-    ],
-};
-💻 Technologies Used
+## 💻 Technologies Used
 React for the UI
 React Testing Library for component testing
 The Cat API for cat breed data
 Mocked Fetch Function to simulate API responses
-🚀 Future Improvements
+## 🚀 Future Improvements
 Add more detailed tests for user interactions.
 Integrate additional data from The Cat API.
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
