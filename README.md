@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 🐱 Cat-Breed React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based application that allows users to browse various cat breeds and view images for each breed. The app utilizes `@testing-library/react` for testing UI components and mocks API calls to ensure a reliable testing environment.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- 📜 Fetches a list of cat breeds from The Cat API.
+- 🖼️ Displays an image for each selected breed.
+- 🧪 Mocked API responses to simulate real data during testing.
 
-### `npm start`
+## ⚙️ Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/cat-breed-app.git
+    ```
+2. **Install the dependencies**:
+    ```bash
+    npm install
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Run the development server**:
+    ```bash
+    npm start
+    ```
 
-### `npm test`
+## 🧪 Testing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project uses **React Testing Library** to verify UI interactions and ensure a consistent user experience.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🏆 Testing Highlights
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Landing Page Test**:  
+   We verify that the main component (App) renders correctly using a simple `render()` function.
 
-### `npm run eject`
+   ```javascript
+   import { render, screen } from "@testing-library/react";
+   import App from "./App";
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   test("renders the landing page", () => {
+       render(<App />);
+   });
+## Mock API Responses:
+A custom mockFetch function simulates API responses for breed lists and images. This allows the app to run and tests to pass even without live API data. The mocked data includes:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📋 A list of cat breeds.
+## 🖼️ Image URLs for each breed, ensuring the UI can display the correct images.
+Error Handling and Edge Cases:
+The mock function also accounts for unhandled requests to test how the app responds to unexpected scenarios.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📊 Sample Mock API Response
+The mockFetch function in the test file handles multiple endpoints, ensuring flexibility and control over the data returned during tests. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 💻 Technologies Used
+React for the UI
+React Testing Library for component testing
+The Cat API for cat breed data
+Mocked Fetch Function to simulate API responses
+## 🚀 Future Improvements
+Add more detailed tests for user interactions.
+Integrate additional data from The Cat API.
+## 🤝 Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
