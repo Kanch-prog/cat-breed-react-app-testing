@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/cat-breed-react-app-testing/static/css/main.beeb46d6.css",
+    "main.js": "/cat-breed-react-app-testing/static/js/main.63e9c290.js",
+    "static/js/453.41715f9c.chunk.js": "/cat-breed-react-app-testing/static/js/453.41715f9c.chunk.js",
+    "static/media/undraw_playful_cat_re_ac9g.svg": "/cat-breed-react-app-testing/static/media/undraw_playful_cat_re_ac9g.1b54c9502b56ab1eae77ed3c4528ea62.svg",
+    "index.html": "/cat-breed-react-app-testing/index.html",
+    "main.beeb46d6.css.map": "/cat-breed-react-app-testing/static/css/main.beeb46d6.css.map",
+    "main.63e9c290.js.map": "/cat-breed-react-app-testing/static/js/main.63e9c290.js.map",
+    "453.41715f9c.chunk.js.map": "/cat-breed-react-app-testing/static/js/453.41715f9c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.beeb46d6.css",
+    "static/js/main.63e9c290.js"
+  ]
+}
