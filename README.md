@@ -1,5 +1,6 @@
 # 🐱 Cat-Breed React App
-![Capture](https://github.com/user-attachments/assets/9626f7a8-e256-466d-a82c-34fd192b3c64)
+
+![Capture2](https://github.com/user-attachments/assets/da2c141a-7a1f-4522-9837-8b5752546c6d)
 
 This project is a React-based application that allows users to browse various cat breeds and view images for each breed. The app utilizes `@testing-library/react` for testing UI components and mocks API calls to ensure a reliable testing environment.
 
@@ -31,8 +32,7 @@ This project uses **React Testing Library** to verify UI interactions and ensure
 
 
 ## 🏆 Testing Highlights
-
-![Capture2](https://github.com/user-attachments/assets/da2c141a-7a1f-4522-9837-8b5752546c6d)
+![Capture](https://github.com/user-attachments/assets/9626f7a8-e256-466d-a82c-34fd192b3c64)
 1. **Landing Page Test**:  
    We verify that the main component (App) renders correctly using a simple `render()` function.
 
